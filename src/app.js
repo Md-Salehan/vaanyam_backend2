@@ -26,11 +26,12 @@ import blockerRouter from "./routes/blocker.route.js";
 import destRouter from "./routes/destination.route.js";
 import uploadImage from "./routes/uploadImage.route.js";
 import adminRouter from "./routes/admin.route.js";
+import videoRouter from "./routes/video.route.js";
 //routes Declaration
 
 app.use("/api/v1/blk", blockerRouter)
 app.use("/api/v1/dest", destRouter)
 app.use("/api/v1/upload", uploadImage)
 app.use("/api/v1/admin", adminRouter )
-
+app.use("/api/v1/video", videoRouter )
 export {app};

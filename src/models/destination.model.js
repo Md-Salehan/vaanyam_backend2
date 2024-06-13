@@ -90,6 +90,10 @@ const destinationSchema = new Schema({
         trim: true,
         default: "",
     },
+    locType: {
+        type: String,
+        required: [true, "Location Type is Required"],
+    },
     default: {
         type: Boolean,
         default: false,
